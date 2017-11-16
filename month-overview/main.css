@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  min-height: 100vh;
+}
+
+th {
+  font-weight: 700;
+}
+
+.main {
+  position: relative;
+}
+.main:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/bg11.jpg), no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  opacity : 0.2;
+  z-index: -1;
+}
+
+.navbar {
+  background-color: #e3f2fd;
+  padding-bottom: 1%;
+}
+
+.nisum-logo {
+  margin: 0 auto;
+  width: 25%;
+}
+
+.navbar--download {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #d34836;
+}
+
+.month--overview__banner {
+  text-align: center;
+  padding: .75rem;
+}
+
+.month--overview__banner h1 {
+  background-color: #4E4F4A;
+  color: #F6E9DC;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  padding: .5rem 2rem;
+  text-transform: uppercase;
+}
+
+.instructions--title {
+  padding: 5%;
+}
+
+.calendar--month--overview {
+  background-color: aliceblue;
+  margin-bottom: 5%;
+  table-display: fixed;
+  width: 100%;
+}
+
+.calendar__day__header,
+.calendar__day__cell {
+  border: 2px solid #e66053;
+  height: 3em;
+  text-align: center;
+  width: 14.29%;
+}
+
+.calendar__day__header {
+  letter-spacing: 0.1em;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.calendar__day__cell {
+  font-size: 2.5rem;
+  padding: .1rem 0 1.5rem 0;
+  position: relative;
+}
+
+tr:nth-child(odd) > .calendar__day__cell:nth-child(odd) {
+  color: #e66053;
+}
+
+tr:nth-child(even) > .calendar__day__cell:nth-child(even) {
+  color: #e66053;
+}
+
+.calendar__day__data {
+  color: black;
+  display: block;
+  font-size: 1.3rem;
+  bottom: 5%;
+  position: absolute;
+  width: 95%;
+  text-align: right;
+}
